@@ -1,0 +1,11 @@
+<h1>Editing gist</h1>
+
+<strong>Snippet:</strong>
+</p>
+<%= raw Pygments.highlight(@gist.snippet, lexer: @gist.lang) %>
+<p>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @gist %> |
+<%= link_to 'Back', gists_path %>
